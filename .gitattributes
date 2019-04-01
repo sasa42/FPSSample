@@ -22,6 +22,7 @@
 *.mask text
 *.playable text
 ProjectSettings/*.asset text
+
 # Binaries
 **/Assets/**/*.png filter=lfs diff=lfs merge=lfs -text
 **/Assets/**/*.tif filter=lfs diff=lfs merge=lfs -text
@@ -55,7 +56,8 @@ ProjectSettings/*.asset text
 **/Assets/**/*.unity filter=lfs diff=lfs merge=lfs -text
 **/Assets/**/*.entities filter=lfs diff=lfs merge=lfs -text
 **/Assets/**/*.wav filter=lfs diff=lfs merge=lfs -text
-# Collapse Unity-generated files on GitHub
+
+# Collapse Unity-generated files on GitHub (https://thoughtbot.com/blog/github-diff-supression)
 *.asset linguist-generated
 *.mat linguist-generated
 *.meta linguist-generated
